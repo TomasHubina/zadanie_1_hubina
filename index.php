@@ -61,7 +61,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                         <div class="col-lg-5 col-12 position-relative">
                             <div class="hero-image-wrap"></div>
-                            <img src="images/portrait-happy-excited-man-holding-laptop-computer.png" class="hero-image img-fluid" alt="">
+                            <img src="images/img2.png" class="hero-image img-fluid" alt="">
                         </div>
 
                     </div>
@@ -76,7 +76,7 @@ https://templatemo.com/tm-578-first-portfolio
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <img src="images/couple-working-from-home-together-sofa.jpg" class="about-image img-fluid" alt="">
+                            <img src="images/img1.jpg" class="about-image img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-6 col-12 mt-5 mt-lg-0">
@@ -97,6 +97,8 @@ https://templatemo.com/tm-578-first-portfolio
                         </div>
 
                     </div>
+                        <h1>Moje obrázky z json</h1>
+                        <?php include_once("functions.php"); ?>
                 </div>
             </section>
 
@@ -208,7 +210,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                         <div class="col-lg-10 col-12 mx-auto">
                             <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
-                                <img src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg" class="avatar-image img-fluid" alt="">
+                                <img src="images/img3.jpg" class="avatar-image img-fluid" alt="">
 
                                 <h2 class="text-white ms-4 mb-0">Services</h2>
                             </div>

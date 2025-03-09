@@ -34,63 +34,12 @@ https://templatemo.com/tm-578-first-portfolio
     </head>
     
     <body>
-
-        <section class="preloader">
-            <div class="spinner">
-                <span class="spinner-rotate"></span>    
-            </div>
-        </section>
-
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">First</a>
-
-                <div class="d-flex align-items-center d-lg-none">
-                    <i class="navbar-icon bi-telephone-plus me-3"></i>
-                    <a class="custom-btn btn" href="#section_5">
-                        120-240-9600
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_1">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Services</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="d-lg-flex align-items-center d-none ms-auto">
-                        <i class="navbar-icon bi-telephone-plus me-3"></i>
-                        <a class="custom-btn btn" href="#section_5">
-                            120-240-9600
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-
+        <?php
+         $file_path = "parts/header.php";
+        if(!require($file_path)) {
+            echo"Failed to include $file_path";
+        }
+        ?>
         <main>
 
             <section class="hero d-flex justify-content-center align-items-center" id="section_1">
@@ -102,7 +51,7 @@ https://templatemo.com/tm-578-first-portfolio
                                 <div class="hero-title-wrap d-flex align-items-center mb-4">
                                     <img src="images/happy-bearded-young-man.jpg" class="avatar-image avatar-image-large img-fluid" alt="">
 
-                                    <h1 class="hero-title ms-3 mb-0">Hello friend!</h1>
+                                    <h1 class="hero-title ms-3 mb-0">Vitajte!</h1>
                                 </div>
 
                                 <h2 class="mb-4">I’m available for freelance work.</h2>
@@ -573,23 +522,12 @@ https://templatemo.com/tm-578-first-portfolio
 
         </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <div class="copyright-text-wrap">
-                            <p class="mb-0">
-                                <span class="copyright-text">Copyright © 2036 <a href="#">First Portfolio</a> Company. All rights reserved.</span>
-                                Design: 
-                                <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
+        <?php
+         $file_path = "parts/footer.php";
+          if(!include($file_path)) {
+            echo"Failed to include $file_path";
+        }
+        ?>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
